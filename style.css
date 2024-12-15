@@ -569,3 +569,6 @@ button:active {
     top: 10px;
   }
 }
+.avoid-clicks {
+  pointer-events: none;
+}
