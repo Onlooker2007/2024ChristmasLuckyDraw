@@ -63,6 +63,7 @@ function drawNumber() {
     iterations++;
     speed = 10;
     if (iterations > 20) {
+      $(".card").removeClass("avoid-clicks");
       $(".bauble").removeClass("light");
       clearInterval(interval);
       resultElement.textContent = number;
@@ -76,7 +77,6 @@ function drawNumber() {
 }
 
 function updateHistory(number) {
-  $(".card").removeClass("avoid-clicks");
   const Acard = document.createElement("div");
   Acard.className = "Acard";
   Acard.textContent = number; // 將數字添加到卡片上
