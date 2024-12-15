@@ -63,8 +63,8 @@ function drawNumber() {
     iterations++;
     speed = 10;
     if (iterations > 20) {
-      $(".card").removeClass("avoid-clicks");
       $(".bauble").removeClass("light");
+      $(".card").removeClass("avoid-clicks");
       clearInterval(interval);
       resultElement.textContent = number;
       $(".result").addClass("done");
