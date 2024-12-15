@@ -23,6 +23,7 @@ const remainingNumbers = Array.from(
 const drawnNumbers = [];
 
 function drawNumber() {
+  $(".card").addClass("avoid-clicks");
   $(".result").removeClass("done");
   if (drawnNumbers.length === 25) {
     alert("All numbers have been drawn!");
@@ -75,6 +76,7 @@ function drawNumber() {
 }
 
 function updateHistory(number) {
+  $(".card").removeClass("avoid-clicks");
   const Acard = document.createElement("div");
   Acard.className = "Acard";
   Acard.textContent = number; // 將數字添加到卡片上
